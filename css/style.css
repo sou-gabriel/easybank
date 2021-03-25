@@ -276,8 +276,7 @@
 }
 
 @media (min-width: 768px) {
-  .about--grid,
-  .articles--grid {
+  .grid {
     grid-template-columns: 1fr 1fr;
   }
 }
