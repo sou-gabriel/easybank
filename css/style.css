@@ -107,13 +107,14 @@
 
 /* Banner */
 .banner {
-  height: 100vh;
+  padding-bottom: 88px;
   background-color: var(--light-blue);
 }
 
 .banner .container {
   display: flex;
   flex-direction: column-reverse;
+  align-items: center;
 }
 
 .banner__cta {
@@ -270,5 +271,12 @@
   } to {
     top: 88px;
     opacity: 1;
+  }
+}
+
+@media (min-width: 768px) {
+  .about--grid,
+  .articles--grid {
+    grid-template-columns: 1fr 1fr;
   }
 }
