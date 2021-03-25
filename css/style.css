@@ -109,6 +109,10 @@
 .banner {
   padding-bottom: 88px;
   background-color: var(--light-blue);
+  background-image: url('/assets/images/bg-intro-mobile.svg');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
 }
 
 .banner .container {
