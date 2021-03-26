@@ -1,8 +1,8 @@
-const menuMobile = document.querySelector('[data-js="menu-mobile"]')
-const iconMenu = document.querySelector('[data-js="icon-menu"]')
-const headerItems = document.querySelector('[data-js="header-items"]')
+const menuMobile = document.querySelector('.header__menu-mobile')
+const iconMenu = document.querySelector('.header__icon')
+const headerItems = document.querySelector('.header__items')
 
-menuMobile.addEventListener('click', () => {
+const handleButtonClick = () => {
   const menuIsActive = headerItems.classList.toggle('header__items--active')
 
   if (menuIsActive) {
@@ -11,4 +11,6 @@ menuMobile.addEventListener('click', () => {
   }
 
   iconMenu.setAttribute('src', './assets/images/icon-hamburger.svg')
-})
+}
+
+menuMobile.addEventListener('click', handleButtonClick)

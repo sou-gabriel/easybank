@@ -1,0 +1,21 @@
+.about {
+  padding: 64px 0;
+  text-align: center;
+}
+
+.about__heading {
+  max-width: 635px;
+  margin-bottom: 56px;
+}
+
+.about__heading .title {
+  margin-bottom: 14px;
+}
+
+.about__img {
+  margin-bottom: 25px;
+}
+
+.about__article-title {
+  margin-bottom: 16px;
+}

@@ -1,0 +1,35 @@
+.articles {
+  padding: 88px 0;
+  text-align: center;
+  background-color: var(--light-gray);
+}
+
+.articles__title {
+  margin-bottom: 31px;
+}
+
+.articles__article--white {
+  background-color: var(--white);
+}
+
+.articles__img {
+  width: 100%;
+  margin-bottom: 25px;
+  border-radius: 5px 5px 0 0;
+}
+
+.articles__content {
+  max-width: 265px;
+  margin: 0 auto;
+  text-align: left;
+  padding: 0 31px 24px;
+}
+
+.articles__author {
+  font-size: 0.833rem;
+  margin-bottom: 8px;
+}
+
+.articles__subtitle {
+  margin-bottom: 8px;
+}

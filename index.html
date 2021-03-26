@@ -6,8 +6,18 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Easybank</title>
+
   <link rel="stylesheet" href="./css/global.css">
-  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/components/title.css">
+  <link rel="stylesheet" href="./css/components/description.css">
+  <link rel="stylesheet" href="./css/components/button.css">
+  <link rel="stylesheet" href="./css/components/header.css">
+  <link rel="stylesheet" href="./css/components/banner.css">
+  <link rel="stylesheet" href="./css/components/about.css">
+  <link rel="stylesheet" href="./css/components/articles.css">
+  <link rel="stylesheet" href="./css/components/footer.css">
+  <link rel="stylesheet" href="./css/animation.css">
+  <link rel="stylesheet" href="./css/responsiveness.css">
 </head>
 
 <body>
@@ -18,16 +28,26 @@
       </h1>
 
       <nav>
-        <a data-js="menu-mobile" class="header__menu-mobile" href="#">
-          <img data-js="icon-menu" src="./assets/images/icon-hamburger.svg" alt="Icon menu">
+        <a class="header__menu-mobile" href="#">
+          <img class="header__icon" src="./assets/images/icon-hamburger.svg" alt="Icon menu">
         </a>
 
         <ul data-js="header-items" class="header__items">
-          <li class="header__item"><a href="#">Home</a></li>
-          <li class="header__item"><a href="#">About</a></li>
-          <li class="header__item"><a href="#">Contact</a></li>
-          <li class="header__item"><a href="#">Blog</a></li>
-          <li class="header__item"><a href="#">Careers</a></li>
+          <li class="header__item">
+            <a class="header__link" href="#">Home</a>
+          </li>
+          <li class="header__item">
+            <a class="header__link" href="#">About</a>
+          </li>
+          <li class="header__item">
+            <a class="header__link" href="#">Contact</a>
+          </li>
+          <li class="header__item">
+            <a class="header__link" href="#">Blog</a>
+          </li>
+          <li class="header__item">
+            <a class="header__link" href="#">Careers</a>
+          </li>
         </ul>
       </nav>
 
@@ -44,8 +64,8 @@
         <button class="button">Request Invite</button>
       </div>
 
-      <div class="banner__image">
-        <img src="./assets/images/image-mockups.png" alt="Mockups">
+      <div>
+        <img class="banner__img" src="./assets/images/image-mockups.png" alt="Mockups">
       </div>
     </div>
   </section>
@@ -95,7 +115,7 @@
       <h2 class="articles__title title title--normal">Lasted Articles</h2>
 
       <div class="grid">
-        <article class="articles__column articles__article--bg">
+        <article class="articles__article--white">
           <img class="articles__img" src="./assets/images/image-currency.jpg" alt="Currency">
           <div class="articles__content">
             <p class="articles__author description">By Claire Robinson</p>
@@ -105,7 +125,7 @@
           </div>
         </article>
 
-        <article class="articles__column articles__article--bg">
+        <article class="articles__article--white">
           <img class="articles__img" src="./assets/images/image-restaurant.jpg" alt="Restaurant">
           <div class="articles__content">
             <p class="articles__author description">By Wilson Hutton</p>
@@ -115,8 +135,7 @@
           </div>
         </article>
 
-
-        <article class="articles__column articles__article--bg">
+        <article class="articles__article--white">
           <img class="articles__img" src="./assets/images/image-plane.jpg" alt="Plane">
           <div class="articles__content">
             <p class="articles__author description">By Wilson Hutton</p>
@@ -126,7 +145,7 @@
           </div>
         </article>
 
-        <article class="articles__column articles__article--bg">
+        <article class="articles__article--white">
           <img class="articles__img" src="./assets/images/image-confetti.jpg" alt="Confetti">
           <div class="articles__content">
             <p class="articles__author description">By Claire Robinson</p>

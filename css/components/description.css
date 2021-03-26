@@ -1,0 +1,13 @@
+.description {
+  font-weight: 400;
+  font-size: 1.25rem;
+  line-height: 25px;
+  letter-spacing: -0.23px;
+  color: var(--blue);
+}
+
+.description--small {
+  font-size: 1.083rem;
+  line-height: 18px;
+  letter-spacing: -0.2px;
+}

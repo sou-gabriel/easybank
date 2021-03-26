@@ -1,0 +1,21 @@
+@keyframes appear {
+  from {
+    top: 50px;
+    opacity: 0;
+  } to {
+    top: 88px;
+    opacity: 1;
+  }
+}
+
+@keyframes underline {
+  0% {
+    width: 0;
+    opacity: 0;
+  } 
+  
+  100% {
+    width: 100%;
+    opacity: 1;
+  }
+}
