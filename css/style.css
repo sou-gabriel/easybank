@@ -68,6 +68,12 @@
   gap: 32px;
 }
 
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
 /* Header */
 .header {
   padding: 22px 0;
@@ -223,56 +229,43 @@
   background-color: var(--dark-blue);
 }
 
-.footer--grid {
-  /* display: flex;
+.footer__nav {
+  height: 380px;
+  display: flex;
   flex-direction: column;
-  align-items: center; */
-  display: grid;
-  grid-template-columns: max-content;
-  gap: 32px;
-  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
 }
-
 
 .footer__logo {
-  display: block;
-  margin-bottom: 32.3px;
-  text-align: center;
+  display: inline-block;
+  margin-bottom: 32px;
 }
 
-.footer__social-networks {
+.footer__networks {
   display: flex;
-}
-
-.footer__social-networks,
-.footer__items {
-  display: flex;
-}
-
-.footer__social-network:not(:last-child) {
-  margin-right: 16px;
-} 
-
-.footer__items {
-  height: 196px;
-  flex-direction: column;
   justify-content: space-between;
 }
 
-.footer__item {
+.footer__links {
   text-align: center;
 }
 
-.footer__item a {
-  font-size: 1.25rem;
+.footer__link {
+  font-weight: 400;
+  font-size: 15px;
   line-height: 26px;
-  letter-spacing: -0.23px;
   color: var(--white);
-  text-decoration: none;
+  display: inline-block;
+  padding-bottom: 8px;
+}
+
+.footer__nav .column:nth-child(3) {
+  text-align: center;
 }
 
 .footer__copyright {
-  display: none;
+ display: none;
 }
 
 @media (min-width: 768px) {
@@ -348,29 +341,36 @@
   }
 
   .footer {
-    min-height: fit-content;
+    min-height: auto;
     padding: 48px 0 41px;
   }
 
-  .footer--grid {
-    grid-template-columns: 1fr 2fr 1fr;
+  .footer__nav {
+    height: inherit;
+    flex-direction: row;
   }
 
-  .footer__logo {
+  .footer__nav .column:nth-child(2) {
+    width: 350px;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .footer__links {
     text-align: left;
   }
 
-  .footer div:nth-child(3) {
-    text-align: right;
+  .footer__link:hover {
+    color: var(--lime-green);
+  }
+
+  .footer__nav .column:nth-child(3) {
+    align-items: flex-end;
   }
 
   .footer__copyright {
-    display: block;
     margin-top: 24px;
-  }
-
-  .footer__items {
-    flex-direction: row;
+    display: block;
   }
 }
 
